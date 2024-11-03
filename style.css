@@ -1,0 +1,144 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+div.recette {
+    width: 45%;
+    background-color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+
+    border-radius: 25px;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+    font-family: "Outfit", serif;
+    color: grey;
+    font-size: 1.2em;
+    -webkit-border-radius: 25px;
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border : 1% solid rgb(199, 194, 194);
+}
+
+/* div class header */
+div.header {
+    line-height: 25px;
+}
+div.header img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+div.header h1 {
+    font-family: "Young Serif", serif;
+    font-weight: normal;
+    font-size: 3em;
+    color: black;
+}
+
+/* div class preparation */
+div.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+div.preparation h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 2em;
+}
+div.preparation li {
+    padding-left: 4%;
+    line-height: 40px;
+}
+
+/* div class ingredients */
+div.ingredient h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 2em;
+}
+div.ingredient li {
+    padding-left: 4%;
+    line-height: 40px;
+}
+
+/* div class instruction */
+div.instruction h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 2em;
+}
+div.instruction ol {
+    counter-reset: list-counter;
+    list-style-type: none; /* On enlève les numéros automatiques */
+    padding-left: 20px;
+}
+/* Style pour chaque élément de la liste avec compteur personnalisé */
+div.instruction ol li {
+    counter-increment: list-counter;
+    position: relative;
+    padding-left: 40px; /* Ajuste l'espace selon ton besoin */
+    color: gray; 
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+/* Style pour le numéro */
+div.instruction ol li::before {
+    content: counter(list-counter) ". ";
+    position: absolute;
+    left: 0;
+    color: hsl(14, 45%, 36%); /* Couleur des numéros */
+    font-weight: bold;
+}
+
+/* div table nutrition */
+div.nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 2em;
+}
+div.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+div.nutrition table th, div.nutrition table td {
+    border: 1px solid hsl(30, 18%, 87%);
+    padding-left: 50px;
+}
+div.nutrition table td.premColonne {
+    color: grey;
+    font-weight: none;
+    border-left: none;
+}
+div.nutrition table td.deuxColonne {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    border-right: none;
+}
+div.nutrition table td {
+    height: 50px;
+    border-top: none;
+}
+div.nutrition table tr.pasBordure {
+    border-bottom: none;
+}
+
+
